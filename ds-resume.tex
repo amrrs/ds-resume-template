@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{ds-resume}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Arya}{Stark}{\runsubsection{Data Science Enthusiast | Fictional Character} \\  \urlstyle{same}\url{https://en.wikipedia.org/wiki/Arya_Stark} \\
+\href{mailto:arya.stark@gameofthrones.com}{arya.stark@gameofthrones.com} | +1 (855) 942-6669 \\
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{GOT University}
+\descript{MA Analytics}
+\location{Feb 2019 \\ Cum. \%: 375.5\%}
+\sectionsep
+
+\subsection{GOT University}
+\descript{BA Analytics}
+\location{Feb April 2017 \\ Cum. \%: 775.5\%}
+\sectionsep
+
+\subsection{GOT School}
+\descript{Analytics}
+\location{Feb April 2015 \\ Cum. \%: 27.5\%}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+
+Wikipedia:  \href{https://en.wikipedia.org/wiki/Arya_Stark}{\custombold{Profile}} \\
+Personal Page:  \href{https://en.wikipedia.org/wiki/Maisie_Williams/}{\custombold{Wikipedia}} \\
+Fandom:  \href{https://gameofthrones.fandom.com/wiki/Arya_Stark}{\custombold{Fan Page}} \\
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\runsubsection{Applied ML}
+
+Analytics for Acting \\
+Targeted Ads \\
+Deep Learning \\
+Sword Fight \\
+Ice Coffee \\
+\sectionsep
+
+\subsection{MOOC}
+Sword Fight \\
+Acting \\
+R Programming \\
+Intro to Python for Data Science  \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+R \textbullet{}   SQL \textbullet{} Python \\  
+\sectionsep
+
+\subsection{Softwares}
+MS Excel \textbullet{}   MS Office Suite \textbullet{} Tensorflow \\
+\sectionsep
+
+\section{Hobbies}
+Fighting \textbullet{} Acting \textbullet{} Travelling \textbullet{}\\
+Videography
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{\custombold{Game of Thrones}}
+\descript{HBO }
+\location{April 2015 – June 2018 | Winterfell}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Arya then plays a significant role in the Great War, effectively ending the conflict through her killing of the Night King during the Battle of Ice and Fire.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\custombold{iBoy}}
+\descript{Netflix }
+\location{May 2013 – Aug 2016 | Internet}
+\begin{tightemize}
+\item iBoy's original premise and Maisie Williams' strong performance aren't enough to overwrite a clichéd narrative, too-serious tone, and overall glitchy execution.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{GOT Characters Image Recognition using Tensorflow} \\
+\sectionsep
+Automated attendance for all the characters on set using Tensorflow and Raspberry Pi.
+\sectionsep
+
+\runsubsection{Study on popular Netlfix shows} \\
+\sectionsep
+Exploratory data analysis to predict the next popular Netflix show and advise HBO on it
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2016	     & Outstanding Supporting Actress in a Drama Series\\
+2015 	 & Primetime Emmy Award \\
+2013	     & Screen Actors Guild Awards\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities} 
+
+\begin{tabular}{rll}
+2018 	& Lead - House Stark \\
+2016 	& Chair - Norton Hill School - Bath Dance College \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications} 
+\begin{tabular}{rll}
+First Certification \\
+Second Certification \\
+\end{tabular}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}
