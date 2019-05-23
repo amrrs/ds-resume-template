@@ -1,6 +1,6 @@
 # Data Scientist Resume Template
 
-### Highlighly Opininated (Self) Data Scientist Resume (LATEX-based)
+### Highlighly Opinionated (Self) Data Scientist Resume (LATEX-based)
 
 ## How to use?
 
